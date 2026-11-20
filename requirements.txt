@@ -1,0 +1,8 @@
+# The rule-based pilot uses only the Python standard library.
+# Semantic retrieval uses a local ONNX embedding model.
+fastembed>=0.7,<1
+numpy>=2,<3
+langgraph>=1,<2
+langchain-openai>=1,<2
+python-dotenv>=1,<2
+

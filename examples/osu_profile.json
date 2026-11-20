@@ -1,0 +1,16 @@
+{
+  "catalog_year": "2026-2027",
+  "target_program": "CS Computer Systems",
+  "target_term": "Fall",
+  "max_credits": 12,
+  "transcript_complete": true,
+  "completed_courses": {
+    "CS162": "C",
+    "CS225": "B",
+    "CS261": "B",
+    "CS271": "C",
+    "CS274": "B"
+  },
+  "in_progress_courses": [],
+  "placement_scores": {}
+}

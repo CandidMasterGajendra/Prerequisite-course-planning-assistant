@@ -1,0 +1,318 @@
+{
+  "cases": 27,
+  "required_category_cases": 25,
+  "decision_accuracy": 1.0,
+  "eligibility_accuracy": 1.0,
+  "abstention_accuracy": 1.0,
+  "citation_coverage_all_responses": 0.8518518518518519,
+  "citation_coverage_catalog_claims": 1.0,
+  "citation_verification_on_cited": 1.0,
+  "chain_evidence_validity": 1.0,
+  "plan_credit_validity": 1.0,
+  "next_step_coverage": 1.0,
+  "rows": [
+    {
+      "id": "direct-01",
+      "expected": "eligible",
+      "actual": "eligible",
+      "correct": true,
+      "citations": 4,
+      "citation_ids_valid": true,
+      "plan_within_limit": true,
+      "plan": [],
+      "has_next_step": true
+    },
+    {
+      "id": "direct-02",
+      "expected": "not_eligible",
+      "actual": "not_eligible",
+      "correct": true,
+      "citations": 4,
+      "citation_ids_valid": true,
+      "plan_within_limit": true,
+      "plan": [],
+      "has_next_step": true
+    },
+    {
+      "id": "direct-03",
+      "expected": "eligible",
+      "actual": "eligible",
+      "correct": true,
+      "citations": 6,
+      "citation_ids_valid": true,
+      "plan_within_limit": true,
+      "plan": [],
+      "has_next_step": true
+    },
+    {
+      "id": "direct-04",
+      "expected": "not_eligible",
+      "actual": "not_eligible",
+      "correct": true,
+      "citations": 6,
+      "citation_ids_valid": true,
+      "plan_within_limit": true,
+      "plan": [],
+      "has_next_step": true
+    },
+    {
+      "id": "direct-05",
+      "expected": "eligible",
+      "actual": "eligible",
+      "correct": true,
+      "citations": 6,
+      "citation_ids_valid": true,
+      "plan_within_limit": true,
+      "plan": [],
+      "has_next_step": true
+    },
+    {
+      "id": "direct-06",
+      "expected": "eligible",
+      "actual": "eligible",
+      "correct": true,
+      "citations": 3,
+      "citation_ids_valid": true,
+      "plan_within_limit": true,
+      "plan": [],
+      "has_next_step": true
+    },
+    {
+      "id": "direct-07",
+      "expected": "not_eligible",
+      "actual": "not_eligible",
+      "correct": true,
+      "citations": 3,
+      "citation_ids_valid": true,
+      "plan_within_limit": true,
+      "plan": [],
+      "has_next_step": true
+    },
+    {
+      "id": "direct-08",
+      "expected": "eligible",
+      "actual": "eligible",
+      "correct": true,
+      "citations": 3,
+      "citation_ids_valid": true,
+      "plan_within_limit": true,
+      "plan": [],
+      "has_next_step": true
+    },
+    {
+      "id": "direct-09",
+      "expected": "eligible",
+      "actual": "eligible",
+      "correct": true,
+      "citations": 3,
+      "citation_ids_valid": true,
+      "plan_within_limit": true,
+      "plan": [],
+      "has_next_step": true
+    },
+    {
+      "id": "direct-10",
+      "expected": "eligible",
+      "actual": "eligible",
+      "correct": true,
+      "citations": 3,
+      "citation_ids_valid": true,
+      "plan_within_limit": true,
+      "plan": [],
+      "has_next_step": true
+    },
+    {
+      "id": "chain-01",
+      "expected": "eligible",
+      "actual": "eligible",
+      "correct": true,
+      "citations": 7,
+      "citation_ids_valid": true,
+      "plan_within_limit": true,
+      "plan": [],
+      "has_next_step": true
+    },
+    {
+      "id": "chain-02",
+      "expected": "not_eligible",
+      "actual": "not_eligible",
+      "correct": true,
+      "citations": 7,
+      "citation_ids_valid": true,
+      "plan_within_limit": true,
+      "plan": [],
+      "has_next_step": true
+    },
+    {
+      "id": "chain-03",
+      "expected": "eligible",
+      "actual": "eligible",
+      "correct": true,
+      "citations": 6,
+      "citation_ids_valid": true,
+      "plan_within_limit": true,
+      "plan": [],
+      "has_next_step": true
+    },
+    {
+      "id": "chain-04",
+      "expected": "eligible",
+      "actual": "eligible",
+      "correct": true,
+      "citations": 5,
+      "citation_ids_valid": true,
+      "plan_within_limit": true,
+      "plan": [],
+      "has_next_step": true
+    },
+    {
+      "id": "chain-05",
+      "expected": "not_eligible",
+      "actual": "not_eligible",
+      "correct": true,
+      "citations": 4,
+      "citation_ids_valid": true,
+      "plan_within_limit": true,
+      "plan": [],
+      "has_next_step": true
+    },
+    {
+      "id": "program-01",
+      "expected": "answered",
+      "actual": "answered",
+      "correct": true,
+      "citations": 1,
+      "citation_ids_valid": true,
+      "plan_within_limit": true,
+      "plan": [],
+      "has_next_step": true
+    },
+    {
+      "id": "program-02",
+      "expected": "answered",
+      "actual": "answered",
+      "correct": true,
+      "citations": 1,
+      "citation_ids_valid": true,
+      "plan_within_limit": true,
+      "plan": [],
+      "has_next_step": true
+    },
+    {
+      "id": "program-03",
+      "expected": "answered",
+      "actual": "answered",
+      "correct": true,
+      "citations": 1,
+      "citation_ids_valid": true,
+      "plan_within_limit": true,
+      "plan": [],
+      "has_next_step": true
+    },
+    {
+      "id": "program-04",
+      "expected": "answered",
+      "actual": "answered",
+      "correct": true,
+      "citations": 1,
+      "citation_ids_valid": true,
+      "plan_within_limit": true,
+      "plan": [],
+      "has_next_step": true
+    },
+    {
+      "id": "program-05",
+      "expected": "answered",
+      "actual": "answered",
+      "correct": true,
+      "citations": 1,
+      "citation_ids_valid": true,
+      "plan_within_limit": true,
+      "plan": [],
+      "has_next_step": true
+    },
+    {
+      "id": "abstain-01",
+      "expected": "needs_more_info",
+      "actual": "needs_more_info",
+      "correct": true,
+      "citations": 0,
+      "citation_ids_valid": true,
+      "plan_within_limit": true,
+      "plan": [],
+      "has_next_step": true
+    },
+    {
+      "id": "abstain-02",
+      "expected": "needs_more_info",
+      "actual": "needs_more_info",
+      "correct": true,
+      "citations": 0,
+      "citation_ids_valid": true,
+      "plan_within_limit": true,
+      "plan": [],
+      "has_next_step": true
+    },
+    {
+      "id": "abstain-03",
+      "expected": "needs_more_info",
+      "actual": "needs_more_info",
+      "correct": true,
+      "citations": 0,
+      "citation_ids_valid": true,
+      "plan_within_limit": true,
+      "plan": [],
+      "has_next_step": true
+    },
+    {
+      "id": "abstain-04",
+      "expected": "needs_more_info",
+      "actual": "needs_more_info",
+      "correct": true,
+      "citations": 0,
+      "citation_ids_valid": true,
+      "plan_within_limit": true,
+      "plan": [],
+      "has_next_step": true
+    },
+    {
+      "id": "abstain-05",
+      "expected": "needs_more_info",
+      "actual": "needs_more_info",
+      "correct": true,
+      "citations": 1,
+      "citation_ids_valid": true,
+      "plan_within_limit": true,
+      "plan": [],
+      "has_next_step": true
+    },
+    {
+      "id": "plan-01",
+      "expected": "plan_proposed",
+      "actual": "plan_proposed",
+      "correct": true,
+      "citations": 5,
+      "citation_ids_valid": true,
+      "plan_within_limit": true,
+      "plan": [
+        "CS274",
+        "CS340",
+        "CS361"
+      ],
+      "has_next_step": true
+    },
+    {
+      "id": "plan-02",
+      "expected": "plan_proposed",
+      "actual": "plan_proposed",
+      "correct": true,
+      "citations": 2,
+      "citation_ids_valid": true,
+      "plan_within_limit": true,
+      "plan": [
+        "CS274"
+      ],
+      "has_next_step": true
+    }
+  ]
+}
