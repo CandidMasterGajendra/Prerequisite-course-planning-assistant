@@ -79,3 +79,4 @@ The generated corpus has 48 selected descriptions from **48 distinct official co
 - Publish the repository to GitHub and record a 1–2 minute demo when ready; publishing requires the owner's GitHub destination and authorization.
 
 See [ASSESSMENT1_DESIGN.md](ASSESSMENT1_DESIGN.md) and [RULE_REVIEW.md](RULE_REVIEW.md) for source and rule decisions.
+# Prerequisite-course-planning-assistant
