@@ -2,6 +2,8 @@
 
 The sourced, bounded pilot covers Oregon State University's 2026–27 CS Computer Systems program. `src/workflow.py` is the LangGraph entry point; `src/osu_app.py` supplies its deterministic rule and planning decisions. `src/course_planner.py` and `data/demo_catalog.json` are an older synthetic prototype retained for comparison; their metrics are not evidence of real-catalog performance.
 
+New to the implementation? Start with [LEARNING_GUIDE.md](LEARNING_GUIDE.md). It explains the architecture, request flow, RAG, embeddings, rule engine, LangGraph, GPT boundary, verification, data, files, evaluation, extension process, interview questions, and official learning resources from first principles.
+
 ## Run the sourced pilot
 
 Install `requirements.txt` first. The CLI now uses the local embedding model as well as the deterministic rule checker; model weights download on first use:
