@@ -73,7 +73,7 @@ def write_reports(results_path: Path, transcripts_path: Path) -> None:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--results", type=Path, default=Path("results/assessment_metrics.json"))
-    parser.add_argument("--transcripts", type=Path, default=Path("EXAMPLE_TRANSCRIPTS.md"))
+    parser.add_argument("--transcripts", type=Path, default=Path("docs/example-transcripts.md"))
     args = parser.parse_args()
     write_reports(args.results, args.transcripts)
     print(f"Wrote {args.results} and {args.transcripts}")

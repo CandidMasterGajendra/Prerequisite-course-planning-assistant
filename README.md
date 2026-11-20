@@ -94,10 +94,10 @@ Run the checks locally:
 .venv311/bin/python -m src.evaluate_retrieval
 .venv311/bin/python -m src.evaluate_osu
 .venv311/bin/python -m src.report_assessment
-.venv311/bin/python -m unittest src.test_assessment src.test_workflow -v
+.venv311/bin/python -m unittest tests.test_assessment tests.test_workflow -v
 ```
 
-These are bounded development results, not a claim of universal advising accuracy. See [EVALUATION_RESULTS.md](EVALUATION_RESULTS.md) for cases, denominators, and interpretation.
+These are bounded development results, not a claim of universal advising accuracy. See [Evaluation results](docs/evaluation-results.md) for cases, denominators, and interpretation.
 
 ## Data and retrieval
 
@@ -105,7 +105,7 @@ These are bounded development results, not a claim of universal advising accurac
 
 `BAAI/bge-small-en-v1.5` produces 384-dimensional embeddings. The index uses normalized dot-product similarity, top-k retrieval, and exact identifier or metadata boosts. The corpus and index are included for offline use.
 
-See [SOURCES.md](SOURCES.md) for provenance and reproduction instructions.
+See [Data sources](docs/sources.md) for provenance and reproduction instructions.
 
 ## Project map
 
@@ -118,10 +118,15 @@ See [SOURCES.md](SOURCES.md) for provenance and reproduction instructions.
 | `src/retrieval.py` | Passage construction, embeddings, and search |
 | `src/evidence.py` | Citation and plan-evidence verification |
 | `src/evaluate_*.py` | Retrieval, decision, and generation evaluation |
+| `tests/` | Assessment and workflow regression tests |
 | `data/` | Catalog corpus, passage metadata, and vector index |
 | `examples/` | Example student profiles |
+| `docs/` | Design, evaluation, source, and learning documentation |
+| `legacy/` | Earlier synthetic prototype retained for comparison |
+| `output/` | Generated PDF deliverable |
+| `results/` | Machine-readable evaluation results |
 
-For a from-first-principles walkthrough of the implementation, data flow, RAG, rules, LangGraph, evaluation, debugging, and interview preparation, read [LEARNING_GUIDE.md](LEARNING_GUIDE.md).
+For a from-first-principles walkthrough of the implementation, data flow, RAG, rules, LangGraph, evaluation, debugging, and interview preparation, read the [Learning guide](docs/learning-guide.md). The [documentation index](docs/README.md) links every supporting report.
 
 ## Scope and limitations
 
@@ -132,4 +137,4 @@ For a from-first-principles walkthrough of the implementation, data flow, RAG, r
 - Automated citation checks validate source identity and scope; they do not prove full semantic entailment of every sentence.
 - The planner proposes eligible reviewed requirements within a credit limit; it is not a graduation-schedule optimizer.
 
-Design and review details are available in [ASSESSMENT1_DESIGN.md](ASSESSMENT1_DESIGN.md) and [RULE_REVIEW.md](RULE_REVIEW.md).
+Design and review details are available in [Assessment design](docs/assessment-design.md) and [Rule review](docs/rule-review.md).

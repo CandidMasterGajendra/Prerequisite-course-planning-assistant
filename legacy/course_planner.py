@@ -15,8 +15,7 @@ from collections import Counter
 from pathlib import Path
 from typing import Any
 
-ROOT = Path(__file__).resolve().parents[1]
-CATALOG_PATH = ROOT / "data" / "demo_catalog.json"
+CATALOG_PATH = Path(__file__).resolve().parent / "data" / "demo_catalog.json"
 
 
 def load_catalog() -> list[dict[str, Any]]:

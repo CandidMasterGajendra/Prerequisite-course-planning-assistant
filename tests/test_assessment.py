@@ -2,9 +2,9 @@
 
 import unittest
 
-from .evaluate_osu import BASE, CASES, evaluate, student
-from .evidence import verify_chain_result
-from .osu_app import respond
+from src.evaluate_osu import BASE, CASES, evaluate, student
+from src.evidence import verify_chain_result
+from src.osu_app import respond
 
 
 REQUIRED_FIELDS = {

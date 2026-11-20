@@ -403,7 +403,7 @@ Machine-readable assessment summary created from the labeled cases.
 | File | Why it matters |
 |---|---|
 | `README.md` | Setup, commands, architecture summary, current capabilities and limits. |
-| `LEARNING_GUIDE.md` | This from-first-principles explanation. |
+| `docs/learning-guide.md` | This from-first-principles explanation. |
 | `web_app.py` | Local frontend, HTTP endpoint, form validation, and result rendering. |
 | `src/workflow.py` | LangGraph orchestration, GPT boundary, and final draft verifier. |
 
@@ -424,9 +424,9 @@ Machine-readable assessment summary created from the labeled cases.
 | `src/ingest_osu.py` | Converts saved official catalog pages into the normalized corpus. |
 | `src/fetch_course_pages.py` | Supports acquiring the selected catalog pages. |
 | `src/audit_rules.py` | Audits relationships between encoded rules and source coverage. |
-| `SOURCES.md` | Provenance and corpus reproduction notes. |
-| `RULE_REVIEW.md` | Manual rule-review status and unresolved cases. |
-| `ASSESSMENT1_DESIGN.md` | Scope and design choices traced to Assignment 1. |
+| `docs/sources.md` | Provenance and corpus reproduction notes. |
+| `docs/rule-review.md` | Manual rule-review status and unresolved cases. |
+| `docs/assessment-design.md` | Scope and design choices traced to Assignment 1. |
 
 ### Evaluation and tests
 
@@ -438,21 +438,21 @@ Machine-readable assessment summary created from the labeled cases.
 | `src/report_assessment.py` | Produces the assessment metrics artifact. |
 | `src/test_assessment.py` | Regression tests for assignment-level behavior. |
 | `src/test_workflow.py` | Graph and adversarial/fake-writer verification tests. |
-| `EVALUATION_RESULTS.md` | Metrics, denominators, interpretation, and limitations. |
-| `GENERATION_EVAL.md` | Procedure for evaluating optional GPT wording. |
-| `EXAMPLE_TRANSCRIPTS.md` | Required example conversations. |
+| `docs/evaluation-results.md` | Metrics, denominators, interpretation, and limitations. |
+| `docs/generation-evaluation.md` | Procedure for evaluating optional GPT wording. |
+| `docs/example-transcripts.md` | Required example conversations. |
 
 ### Deliverables
 
 | File | Responsibility |
 |---|---|
-| `SUBMISSION_WRITEUP.md` | Concise submission-oriented report. |
-| `PROJECT_WRITEUP.md` | Broader project narrative. |
+| `docs/submission-writeup.md` | Concise submission-oriented report. |
+| `docs/project-writeup.md` | Broader project narrative. |
 | `output/pdf/course_planning_assistant_writeup.pdf` | One-page rendered write-up. |
 
 ### Legacy comparison
 
-`src/course_planner.py`, `src/evaluate.py`, `data/demo_catalog.json`, and `examples/student_profile.json` are the earlier synthetic prototype. They are retained for comparison but are not the sourced OSU pilot and their metrics must not be presented as real-catalog performance.
+`legacy/course_planner.py`, `legacy/evaluate.py`, `legacy/data/demo_catalog.json`, and `legacy/examples/student_profile.json` are the earlier synthetic prototype. They are retained for comparison but are not the sourced OSU pilot and their metrics must not be presented as real-catalog performance.
 
 ## 12. How to run it
 
@@ -517,7 +517,7 @@ OPENAI_MODEL=gpt-5-mini
 .venv311/bin/python -m src.evaluate_retrieval
 .venv311/bin/python -m src.evaluate_osu
 .venv311/bin/python -m src.report_assessment
-.venv311/bin/python -m unittest src.test_assessment src.test_workflow -v
+.venv311/bin/python -m unittest tests.test_assessment tests.test_workflow -v
 ```
 
 ## 13. How to debug it methodically
@@ -730,7 +730,7 @@ Read these with a question from this repository in mind; passive reading is less
 
 ### Source domain
 
-- Read `SOURCES.md` and follow the official OSU catalog URLs recorded there. Understanding the source domain is as important as understanding the code.
+- Read `docs/sources.md` and follow the official OSU catalog URLs recorded there. Understanding the source domain is as important as understanding the code.
 
 ## 21. A safe resume description
 

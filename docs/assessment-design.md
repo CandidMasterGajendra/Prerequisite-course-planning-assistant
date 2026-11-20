@@ -2,7 +2,7 @@
 
 Status: source audit and proposed design, 20 November 2026. The existing demo code and synthetic data do not implement this design and are not submission ready.
 
-Update, 20 November 2026: the focused corpus now uses 48 distinct official course-specific pages, two program pages, and two policy pages (52 URLs total). See `SOURCES.md` and the generated manifest for the verified dataset count. The ten-page table below records the earlier parent-page audit, not the current submitted corpus.
+Update, 20 November 2026: the focused corpus now uses 48 distinct official course-specific pages, two program pages, and two policy pages (52 URLs total). See `docs/sources.md` and the generated manifest for the verified dataset count. The ten-page table below records the earlier parent-page audit, not the current submitted corpus.
 
 ## Product scope
 
@@ -35,7 +35,7 @@ The first release should select a prerequisite-closed set of 40–60 courses: th
 
 The CS source page has 145 `courseblock` elements, but a focused undergraduate set is much smaller, and each course block is only about 40–110 words. The full 40,716-word count therefore relies heavily on unrelated mathematics, ECE, and statistics courses and on general regulations. We must not use that raw count as proof that a focused dataset meets the 30,000-word route. The safer dataset route is to preserve at least 25 distinct, source-backed course/program/policy *documents* (the assessment explicitly allows course descriptions), while transparently reporting that several descriptions come from the same original catalog URL. If a reviewer interprets “distinct documents/pages” as distinct URLs, expand the evidence set with relevant official degree, option, and policy pages and verify the count again.
 
-Initial course chain for manual rule review: `CS 161 -> CS 162 -> CS 261`, with `CS 225` or `MTH 231` as discrete-math alternatives; `CS 340`, `CS 361`, `CS 362`, `CS 374`, and `CS 461 -> CS 462 -> CS 463` provide plan and multi-hop cases. CS 361 is recommended for CS 362, not required; the wording of CS 325's prerequisite has ambiguous AND/OR grouping. See `RULE_REVIEW.md` before encoding either rule. Add option courses only after checking the option's exact required/elective table.
+Initial course chain for manual rule review: `CS 161 -> CS 162 -> CS 261`, with `CS 225` or `MTH 231` as discrete-math alternatives; `CS 340`, `CS 361`, `CS 362`, `CS 374`, and `CS 461 -> CS 462 -> CS 463` provide plan and multi-hop cases. CS 361 is recommended for CS 362, not required; the wording of CS 325's prerequisite has ambiguous AND/OR grouping. See `docs/rule-review.md` before encoding either rule. Add option courses only after checking the option's exact required/elective table.
 
 ## Rule cases evidenced by catalog
 

@@ -4,7 +4,7 @@ import unittest
 import os
 from unittest.mock import patch
 
-from .workflow import run
+from src.workflow import run
 
 
 PROFILE = {
